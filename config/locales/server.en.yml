@@ -357,6 +357,9 @@ en:
       code: BTS
       name: BTS
       format: '0,0.0000'
+
+
+
   datagrid:
     empty: no data found
     filters:

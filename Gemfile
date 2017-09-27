@@ -2,12 +2,8 @@ source 'https://rubygems.org'
 
 gem 'rails', '~> 4.0.12'
 gem 'rails-i18n'
-if defined?(JRUBY_VERSION)
-  gem 'jdbc-mysql', platform: :jruby
-  gem 'activerecord-jdbc-adapter', platform: :jruby
-else
-  gem 'mysql2', '~> 0.3.21'
-end
+
+gem 'mysql2', '~> 0.3.21'
 gem 'daemons-rails'
 gem 'redis-rails'
 
@@ -27,7 +23,7 @@ gem 'aasm', '~> 3.4.0'
 gem 'amqp', '~> 1.3.0'
 gem 'bunny', '~> 1.2.1'
 gem 'cancancan'
-gem 'enumerize', '~> 1.0'
+gem 'enumerize'
 gem 'datagrid'
 gem 'acts-as-taggable-on'
 gem 'kaminari'
@@ -58,6 +54,7 @@ gem 'bourbon'
 gem 'momentjs-rails'
 gem 'eco'
 gem 'browser', '~> 0.8.0'
+gem 'rbtree'
 gem 'liability-proof', '0.0.9'
 gem 'whenever', '~> 0.9.2'
 gem 'grape', '~> 0.7.0'
@@ -72,7 +69,6 @@ gem 'carrierwave', '~> 0.10.0'
 gem 'simple_captcha2', require: 'simple_captcha'
 gem 'rest-client', '~> 1.6.8'
 
-
 group :development, :test do
   gem 'factory_girl_rails'
   gem 'faker', '~> 1.4.3'
@@ -80,19 +76,14 @@ group :development, :test do
   gem 'mina-slack', github: 'peatio/mina-slack'
   gem 'meta_request'
   gem 'better_errors'
-  # gem 'binding_of_caller'
+  gem 'binding_of_caller'
   gem 'pry-rails'
   gem 'quiet_assets'
   gem 'mails_viewer'
   gem 'timecop'
   gem 'dotenv-rails'
   gem 'rspec-rails'
-  unless defined?(JRUBY_VERSION)
-    gem 'byebug'
-    gem 'rbtree'
-  else
-    gem 'rbtree-jruby'
-  end
+  gem 'byebug'
 end
 
 group :test do
@@ -107,8 +98,4 @@ group :test do
   # rspec-rails rely on test-unit if rails version less then 4.1.0
   # but test-unit has been removed from ruby core since 2.2.0
   gem 'test-unit'
-end
-
-group :production do
-  gem 'agent_fix'
 end
