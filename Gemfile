@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~> 4.0.12'
+gem 'rails', '~> 6.0.3', '>= 6.0.3.5'
 gem 'rails-i18n'
 if defined?(JRUBY_VERSION)
   gem 'jdbc-mysql', platform: :jruby
@@ -28,7 +28,7 @@ gem 'amqp', '~> 1.3.0'
 gem 'bunny', '~> 1.2.1'
 gem 'cancancan'
 gem 'enumerize', '~> 1.0'
-gem 'datagrid'
+gem 'datagrid', '>= 1.5.4'
 gem 'acts-as-taggable-on'
 gem 'kaminari'
 gem 'paranoid2'
@@ -69,7 +69,7 @@ gem 'phonelib', '~> 0.3.5'
 gem 'twilio-ruby', '~> 3.11'
 gem 'unread', github: 'peatio/unread'
 gem 'carrierwave', '~> 0.10.0'
-gem 'simple_captcha2', require: 'simple_captcha'
+gem 'simple_captcha2', '>= 0.3.0', require: 'simple_captcha'
 gem 'rest-client', '~> 1.6.8'
 
 
@@ -83,7 +83,7 @@ group :development, :test do
   # gem 'binding_of_caller'
   gem 'pry-rails'
   gem 'quiet_assets'
-  gem 'mails_viewer'
+  gem 'mails_viewer', '>= 0.1.2'
   gem 'timecop'
   gem 'dotenv-rails'
   gem 'rspec-rails'
