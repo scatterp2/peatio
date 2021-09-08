@@ -79,7 +79,7 @@ group :development, :test do
   gem 'mina'
   gem 'mina-slack', github: 'peatio/mina-slack'
   gem 'meta_request'
-  gem 'better_errors'
+  gem 'better_errors', '>= 2.8.0'
   # gem 'binding_of_caller'
   gem 'pry-rails'
   gem 'quiet_assets'
@@ -99,10 +99,10 @@ group :test do
   gem 'database_cleaner'
   gem 'mocha', :require => false
   gem 'shoulda-matchers'
-  gem 'capybara'
+  gem 'capybara', '>= 2.15.1'
   gem 'launchy'
   gem 'selenium-webdriver'
-  gem 'poltergeist'
+  gem 'poltergeist', '>= 1.16.0'
 
   # rspec-rails rely on test-unit if rails version less then 4.1.0
   # but test-unit has been removed from ruby core since 2.2.0
