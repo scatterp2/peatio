@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~> 4.0.12'
+gem 'rails', '~> 4.2.0'
 gem 'rails-i18n'
 if defined?(JRUBY_VERSION)
   gem 'jdbc-mysql', platform: :jruby
@@ -46,7 +46,7 @@ gem 'em-websocket', '~> 0.5.1'
 
 gem 'simple_form', '~> 3.1.0'
 gem 'slim-rails'
-gem 'sass-rails'
+gem 'sass-rails', '>= 6.0.0'
 gem 'coffee-rails'
 gem 'uglifier'
 gem "jquery-rails"
@@ -69,7 +69,7 @@ gem 'phonelib', '~> 0.3.5'
 gem 'twilio-ruby', '~> 3.11'
 gem 'unread', github: 'peatio/unread'
 gem 'carrierwave', '~> 0.10.0'
-gem 'simple_captcha2', require: 'simple_captcha'
+gem 'simple_captcha2', '>= 0.3.0', require: 'simple_captcha'
 gem 'rest-client', '~> 1.6.8'
 
 
