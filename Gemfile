@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~> 4.0.12'
-gem 'rails-i18n'
+gem 'rails', '~> 5.0.0'
+gem 'rails-i18n', '>= 5.0.0'
 if defined?(JRUBY_VERSION)
   gem 'jdbc-mysql', platform: :jruby
   gem 'activerecord-jdbc-adapter', platform: :jruby
@@ -16,8 +16,8 @@ gem 'json'
 gem 'jbuilder'
 gem 'bcrypt-ruby', '~> 3.1.2'
 
-gem 'doorkeeper', '~> 1.4.1'
-gem 'omniauth', '~> 1.2.1'
+gem 'doorkeeper', '~> 1.4.2'
+gem 'omniauth', '~> 1.3.1'
 gem 'omniauth-identity', '~> 1.1.1'
 
 gem 'figaro'
@@ -39,17 +39,17 @@ gem 'paper_trail', '~> 3.0.1'
 gem 'rails-observers'
 gem 'country_select', '~> 2.1.0'
 
-gem 'gon', '~> 5.2.0'
+gem 'gon', '~> 5.2.3'
 gem 'pusher'
 gem 'eventmachine', '~> 1.0.4'
 gem 'em-websocket', '~> 0.5.1'
 
-gem 'simple_form', '~> 3.1.0'
+gem 'simple_form', '~> 3.2.1'
 gem 'slim-rails'
 gem 'sass-rails'
 gem 'coffee-rails'
 gem 'uglifier'
-gem "jquery-rails"
+gem "jquery-rails", ">= 4.0.1"
 gem "angularjs-rails"
 gem 'bootstrap-sass', '~> 3.2.0.2'
 gem 'bootstrap-wysihtml5-rails'
@@ -64,12 +64,12 @@ gem 'grape', '~> 0.7.0'
 gem 'grape-entity', '~> 0.4.2'
 gem 'grape-swagger', '~> 0.7.2'
 gem 'rack-attack', '~> 3.0.0'
-gem 'easy_table'
+gem 'easy_table', '>= 0.0.8'
 gem 'phonelib', '~> 0.3.5'
 gem 'twilio-ruby', '~> 3.11'
 gem 'unread', github: 'peatio/unread'
 gem 'carrierwave', '~> 0.10.0'
-gem 'simple_captcha2', require: 'simple_captcha'
+gem 'simple_captcha2', '>= 0.3.0', require: 'simple_captcha'
 gem 'rest-client', '~> 1.6.8'
 
 
