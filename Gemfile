@@ -78,7 +78,7 @@ group :development, :test do
   gem 'faker', '~> 1.4.3'
   gem 'mina'
   gem 'mina-slack', github: 'peatio/mina-slack'
-  gem 'meta_request'
+  gem 'meta_request', '>= 0.8.0'
   gem 'better_errors'
   # gem 'binding_of_caller'
   gem 'pry-rails'
