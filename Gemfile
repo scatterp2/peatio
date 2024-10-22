@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~> 4.0.12'
+gem 'rails', '~> 7.0.0'
 gem 'rails-i18n'
 if defined?(JRUBY_VERSION)
   gem 'jdbc-mysql', platform: :jruby
@@ -28,9 +28,9 @@ gem 'amqp', '~> 1.3.0'
 gem 'bunny', '~> 1.2.1'
 gem 'cancancan'
 gem 'enumerize', '~> 1.0'
-gem 'datagrid'
+gem 'datagrid', '>= 1.7.0'
 gem 'acts-as-taggable-on'
-gem 'kaminari'
+gem 'kaminari', '>= 1.0.0'
 gem 'paranoid2'
 gem 'active_hash'
 gem 'http_accept_language'
@@ -46,7 +46,7 @@ gem 'em-websocket', '~> 0.5.1'
 
 gem 'simple_form', '~> 3.1.0'
 gem 'slim-rails'
-gem 'sass-rails'
+gem 'sass-rails', '>= 6.0.0'
 gem 'coffee-rails'
 gem 'uglifier'
 gem "jquery-rails"
