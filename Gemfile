@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '~> 4.0.12'
-gem 'rails-i18n'
+gem 'rails-i18n', '>= 8.0.0'
 if defined?(JRUBY_VERSION)
   gem 'jdbc-mysql', platform: :jruby
   gem 'activerecord-jdbc-adapter', platform: :jruby
@@ -29,7 +29,7 @@ gem 'bunny', '~> 1.2.1'
 gem 'cancancan'
 gem 'enumerize', '~> 1.0'
 gem 'datagrid'
-gem 'acts-as-taggable-on'
+gem 'acts-as-taggable-on', '>= 12.0.0'
 gem 'kaminari'
 gem 'paranoid2'
 gem 'active_hash'
