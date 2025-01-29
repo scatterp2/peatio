@@ -4,7 +4,7 @@ gem 'rails', '~> 4.0.12'
 gem 'rails-i18n'
 if defined?(JRUBY_VERSION)
   gem 'jdbc-mysql', platform: :jruby
-  gem 'activerecord-jdbc-adapter', platform: :jruby
+  gem 'activerecord-jdbc-adapter', '>= 71.0', platform: :jruby
 else
   gem 'mysql2', '~> 0.3.21'
 end
