@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~> 4.0.12'
-gem 'rails-i18n'
+gem 'rails', '~> 4.1.0'
+gem 'rails-i18n', '>= 5.0.0'
 if defined?(JRUBY_VERSION)
   gem 'jdbc-mysql', platform: :jruby
   gem 'activerecord-jdbc-adapter', platform: :jruby
@@ -16,11 +16,11 @@ gem 'json'
 gem 'jbuilder'
 gem 'bcrypt-ruby', '~> 3.1.2'
 
-gem 'doorkeeper', '~> 1.4.1'
+gem 'doorkeeper', '~> 2.0.0'
 gem 'omniauth', '~> 1.2.1'
 gem 'omniauth-identity', '~> 1.1.1'
 
-gem 'figaro'
+gem 'figaro', '>= 1.2.0'
 gem 'hashie'
 
 gem 'aasm', '~> 3.4.0'
@@ -28,7 +28,7 @@ gem 'amqp', '~> 1.3.0'
 gem 'bunny', '~> 1.2.1'
 gem 'cancancan'
 gem 'enumerize', '~> 1.0'
-gem 'datagrid'
+gem 'datagrid', '>= 1.5.5'
 gem 'acts-as-taggable-on'
 gem 'kaminari'
 gem 'paranoid2'
@@ -45,17 +45,17 @@ gem 'eventmachine', '~> 1.0.4'
 gem 'em-websocket', '~> 0.5.1'
 
 gem 'simple_form', '~> 3.1.0'
-gem 'slim-rails'
-gem 'sass-rails'
-gem 'coffee-rails'
+gem 'slim-rails', '>= 3.1.3'
+gem 'sass-rails', '>= 5.0.7'
+gem 'coffee-rails', '>= 5.0.0'
 gem 'uglifier'
-gem "jquery-rails"
+gem "jquery-rails", ">= 3.1.5"
 gem "angularjs-rails"
 gem 'bootstrap-sass', '~> 3.2.0.2'
 gem 'bootstrap-wysihtml5-rails'
 gem 'font-awesome-sass'
-gem 'bourbon'
-gem 'momentjs-rails'
+gem 'bourbon', '>= 7.0.0'
+gem 'momentjs-rails', '>= 2.20.1'
 gem 'eco'
 gem 'browser', '~> 0.8.0'
 gem 'liability-proof', '0.0.9'
@@ -69,24 +69,24 @@ gem 'phonelib', '~> 0.3.5'
 gem 'twilio-ruby', '~> 3.11'
 gem 'unread', github: 'peatio/unread'
 gem 'carrierwave', '~> 0.10.0'
-gem 'simple_captcha2', require: 'simple_captcha'
+gem 'simple_captcha2', '>= 0.3.0', require: 'simple_captcha'
 gem 'rest-client', '~> 1.6.8'
 
 
 group :development, :test do
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', '>= 4.9.0'
   gem 'faker', '~> 1.4.3'
   gem 'mina'
   gem 'mina-slack', github: 'peatio/mina-slack'
-  gem 'meta_request'
+  gem 'meta_request', '>= 0.5.0'
   gem 'better_errors'
   # gem 'binding_of_caller'
   gem 'pry-rails'
   gem 'quiet_assets'
-  gem 'mails_viewer'
+  gem 'mails_viewer', '>= 0.2.0'
   gem 'timecop'
-  gem 'dotenv-rails'
-  gem 'rspec-rails'
+  gem 'dotenv-rails', '>= 2.2.2'
+  gem 'rspec-rails', '>= 3.7.0'
   unless defined?(JRUBY_VERSION)
     gem 'byebug'
     gem 'rbtree'
@@ -99,10 +99,10 @@ group :test do
   gem 'database_cleaner'
   gem 'mocha', :require => false
   gem 'shoulda-matchers'
-  gem 'capybara'
+  gem 'capybara', '>= 2.15.2'
   gem 'launchy'
   gem 'selenium-webdriver'
-  gem 'poltergeist'
+  gem 'poltergeist', '>= 1.17.0'
 
   # rspec-rails rely on test-unit if rails version less then 4.1.0
   # but test-unit has been removed from ruby core since 2.2.0
