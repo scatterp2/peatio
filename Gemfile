@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~> 4.0.12'
+gem 'rails', '~> 7.1.5', '>= 7.1.5.2'
 gem 'rails-i18n'
 if defined?(JRUBY_VERSION)
   gem 'jdbc-mysql', platform: :jruby
-  gem 'activerecord-jdbc-adapter', platform: :jruby
+  gem 'activerecord-jdbc-adapter', '>= 70.0', platform: :jruby
 else
   gem 'mysql2', '~> 0.3.21'
 end
@@ -28,14 +28,14 @@ gem 'amqp', '~> 1.3.0'
 gem 'bunny', '~> 1.2.1'
 gem 'cancancan'
 gem 'enumerize', '~> 1.0'
-gem 'datagrid'
-gem 'acts-as-taggable-on'
+gem 'datagrid', '>= 1.5.5'
+gem 'acts-as-taggable-on', '>= 5.0.0'
 gem 'kaminari'
-gem 'paranoid2'
+gem 'paranoid2', '>= 1.1.5'
 gem 'active_hash'
 gem 'http_accept_language'
-gem "globalize", "~> 4.0.0"
-gem 'paper_trail', '~> 3.0.1'
+gem "globalize", "~> 6.3.0"
+gem 'paper_trail', '~> 10.3.1'
 gem 'rails-observers'
 gem 'country_select', '~> 2.1.0'
 
@@ -69,7 +69,7 @@ gem 'phonelib', '~> 0.3.5'
 gem 'twilio-ruby', '~> 3.11'
 gem 'unread', github: 'peatio/unread'
 gem 'carrierwave', '~> 0.10.0'
-gem 'simple_captcha2', require: 'simple_captcha'
+gem 'simple_captcha2', '>= 0.3.0', require: 'simple_captcha'
 gem 'rest-client', '~> 1.6.8'
 
 
@@ -83,7 +83,7 @@ group :development, :test do
   # gem 'binding_of_caller'
   gem 'pry-rails'
   gem 'quiet_assets'
-  gem 'mails_viewer'
+  gem 'mails_viewer', '>= 0.2.0'
   gem 'timecop'
   gem 'dotenv-rails'
   gem 'rspec-rails'
